@@ -23,11 +23,10 @@ export const TextContainer = styled.div`
   position: relative;
   margin: 0 auto;
   z-index: 1000;
-  color: black;
+  color: #34745c;
   font-size: 18px;
+  text-align: center;
 
-  font-family: 'Dancing Script', cursive;
-  font-optical-sizing: auto;
   font-style: normal;
 `;
 
@@ -44,14 +43,14 @@ export const TitleContainer = styled.h1`
   font-style: normal;
 `;
 
-export const VersicleText = styled.div`
+export const VersicleText = styled.p`
   position: relative;
   margin: 0 auto;
   color: #34745c;
   font-weight: 700;
   text-align: center;
   max-width: 300px;
-  font-size: 20px;
+  font-size: 14px;
 `;
 
 export const Subtitle = styled.p`
