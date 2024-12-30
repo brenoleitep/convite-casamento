@@ -11,6 +11,7 @@ import {
   ImageBgContainer,
   MonthYearContainer,
   Subtitle,
+  TextContainer,
   TitleContainer,
   VersicleText,
 } from './index.style';
@@ -26,9 +27,9 @@ function App() {
     <BgContainer>
       <ImageBgContainer src={fundoConvite} alt="Fundo convite" />
 
-      <VersicleText>
+      <TextContainer>
         Você foi convidado para o casamento de Davi e Amanda!
-      </VersicleText>
+      </TextContainer>
 
       <CentralImage>
         <img src={centralImage} alt="Imagem central" />
