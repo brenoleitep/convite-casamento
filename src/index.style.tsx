@@ -38,12 +38,24 @@ export const VersicleText = styled.div`
   font-weight: 700;
   text-align: center;
   max-width: 300px;
+  font-size: 24px;
 `;
 
 export const CentralImage = styled.div`
   position: relative;
   margin: 0 auto;
   z-index: 1000;
+`;
+
+export const ButtonContainer = styled.button`
+  position: relative;
+  margin: 0 auto;
+  z-index: 1000;
+  padding: 12px 24px;
+
+  background-color: #8b762e;
+  color: white;
+  font-size: 24px;
 `;
 
 // src/styles/GlobalStyles.js

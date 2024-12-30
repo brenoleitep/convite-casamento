@@ -3,9 +3,9 @@ import fundoConvite from './assets/bgfull.png';
 import centralImage from './assets/testCouple.png';
 import {
   BgContainer,
+  ButtonContainer,
   CentralImage,
   ImageBgContainer,
-  TextContainer,
   VersicleText,
 } from './index.style';
 
@@ -15,18 +15,17 @@ function App() {
       <ImageBgContainer src={fundoConvite} alt="Fundo convite" />
 
       <VersicleText>
-        "Assim, eles já não são dois, mas sim uma só carne. Portanto, o que Deus
-        uniu, ninguém separa". <br />
-        Mateus 19:6
+        Você foi convidado para o casamento de Davi e Amanda!
       </VersicleText>
 
       <CentralImage>
         <img src={centralImage} alt="Imagem central" />
       </CentralImage>
 
-      <TextContainer>
+      <ButtonContainer>Abra o seu convite</ButtonContainer>
+      {/* <TextContainer>
         <h2>D 💞 A</h2>
-      </TextContainer>
+      </TextContainer> */}
     </BgContainer>
   );
 }
