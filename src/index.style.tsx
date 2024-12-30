@@ -31,14 +31,37 @@ export const TextContainer = styled.div`
   font-style: normal;
 `;
 
+export const TitleContainer = styled.h1`
+  position: relative;
+  margin: 0 auto;
+  z-index: 1000;
+  color: #34745c;
+  font-size: 48px;
+  text-align: center;
+
+  font-family: 'Dancing Script', cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+`;
+
 export const VersicleText = styled.div`
   position: relative;
   margin: 0 auto;
-  color: black;
+  color: #34745c;
   font-weight: 700;
   text-align: center;
   max-width: 300px;
-  font-size: 24px;
+  font-size: 20px;
+`;
+
+export const Subtitle = styled.p`
+  position: relative;
+  margin: 0 auto;
+  color: #34745c;
+  font-weight: 700;
+  text-align: center;
+  max-width: 300px;
+  font-size: 16px;
 `;
 
 export const CentralImage = styled.div`
@@ -56,6 +79,61 @@ export const ButtonContainer = styled.button`
   background-color: #8b762e;
   color: white;
   font-size: 24px;
+`;
+
+export const DateContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  z-index: 1000;
+  gap: 7px;
+  color: #34745c;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`;
+
+export const MonthYearContainer = styled.div`
+  font-size: 32px;
+
+  p {
+    position: relative;
+    display: inline-block;
+    font-size: inherit;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      background-color: #34745c; /* Cor do traço */
+    }
+
+    &::before {
+      top: -5px; /* Distância do traço superior */
+    }
+
+    &::after {
+      bottom: -5px; /* Distância do traço inferior */
+    }
+  }
+`;
+
+export const DayContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: 700;
+  }
 `;
 
 // src/styles/GlobalStyles.js
@@ -79,7 +157,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-  font-family: "Cormorant Garamond", serif;
+    font-family: "Poppins", serif;
     line-height: 1.5; /* Altura de linha */
     -webkit-font-smoothing: antialiased; /* Suavização de fontes no macOS */
   }
