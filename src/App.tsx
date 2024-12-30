@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
 import './App.css';
 import fundoConvite from './assets/bgfull.png';
 import centralImage from './assets/testCouple.png';
@@ -8,6 +10,8 @@ import {
   CentralImage,
   DateContainer,
   DayContainer,
+  IconsContainer,
+  IconsJustify,
   ImageBgContainer,
   MonthYearContainer,
   Subtitle,
@@ -28,7 +32,7 @@ function App() {
       <ImageBgContainer src={fundoConvite} alt="Fundo convite" />
 
       <TextContainer>
-        Você foi convidado para o casamento de Davi e Amanda!
+        Você foi convidado para o casamento de <br /> <span>Davi e Amanda</span>
       </TextContainer>
 
       <CentralImage>
@@ -73,6 +77,31 @@ function App() {
             <p>2024</p>
           </MonthYearContainer>
         </DateContainer>
+
+        <IconsContainer>
+          <p>TOQUE NOS ÍCONES PARA ACESSAR</p>
+
+          <IconsJustify>
+            <ul>
+              <li>
+                {' '}
+                <FaWhatsapp />
+                <span>
+                  CONFIRMAR <br />
+                  PRESENÇA
+                </span>
+              </li>
+              <li>
+                {' '}
+                <FaLocationDot />
+                <span>
+                  COMO <br />
+                  CHEGAR
+                </span>
+              </li>
+            </ul>
+          </IconsJustify>
+        </IconsContainer>
       </BgContainer>
     </>
   );
