@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BgContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   padding: 0;
   position: relative;
 
