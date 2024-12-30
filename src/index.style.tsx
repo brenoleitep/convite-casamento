@@ -24,10 +24,23 @@ export const TextContainer = styled.div`
   margin: 0 auto;
   z-index: 1000;
   color: #34745c;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
+  font-weight: 700;
 
+  max-width: 300px;
   font-style: normal;
+
+  span {
+    z-index: 1000;
+    color: #34745c;
+    font-size: 32px;
+    text-align: center;
+
+    font-family: 'Dancing Script', cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
 `;
 
 export const TitleContainer = styled.h1`
@@ -35,7 +48,7 @@ export const TitleContainer = styled.h1`
   margin: 0 auto;
   z-index: 1000;
   color: #34745c;
-  font-size: 48px;
+  font-size: 38px;
   text-align: center;
 
   font-family: 'Dancing Script', cursive;
@@ -117,6 +130,60 @@ export const MonthYearContainer = styled.div`
     &::after {
       bottom: -5px; /* Distância do traço inferior */
     }
+  }
+`;
+
+export const IconsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  margin: 0 auto;
+  align-items: center;
+  gap: 8px;
+
+  p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #34745c;
+  }
+`;
+
+export const IconsJustify = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  li {
+    background-color: #34745c;
+    position: relative;
+    width: 82px;
+    height: 82px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      position: absolute;
+      top: 86px;
+      color: #34745c;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  svg {
+    font-size: 64px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 6px;
+    color: #fff;
   }
 `;
 
